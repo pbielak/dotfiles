@@ -9,10 +9,8 @@ Plug 'scrooloose/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
-Plug 'jnurmine/Zenburn'
-Plug 'altercation/vim-colors-solarized'
 Plug 'kien/ctrlp.vim'
-Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'jnurmine/Zenburn'
 
 call plug#end()
 filetype plugin indent on    " required
@@ -47,15 +45,13 @@ au BufNewFile,BufRead *.py
 set encoding=utf-8
 
 " Color schemes
-if has('gui_running')
-	set background=dark
-	colorscheme solarized
-else
-	colorscheme zenburn
-endif
+colorscheme zenburn
 
 " Enable line numbering
 set nu
 
 let python_highlight_all=1
 syntax on
+
+" Backspace 'bug'
+set backspace=2
