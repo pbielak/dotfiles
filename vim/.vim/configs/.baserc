@@ -36,3 +36,13 @@ syntax on
 
 " Backspace 'bug'
 set backspace=2
+
+" Swap files
+set directory=~/.vim/swapfiles
+
+" Highlight search
+set hls
+
+" Draw column as 80 chars
+set colorcolumn=80
+
