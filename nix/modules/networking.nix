@@ -6,7 +6,7 @@
   networking.hostName = "nixos";
 
   # Wireless
-  # networking.wireless.enable = true;
+  networking.wireless.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

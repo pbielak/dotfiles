@@ -40,6 +40,7 @@
     xflux
     xflux-gui
     pciutils
+    networkmanager
 
     # Window manager
     i3
