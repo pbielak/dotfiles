@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Piotr Bielak
+email = piotrbielak2@gmail.com 
+[alias]
+	s = status
+	c = commit
+	ca = commit --amend
+	can = commit --amend --no-edit
+	ch = checkout

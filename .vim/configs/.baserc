@@ -4,8 +4,6 @@ filetype off                  " required
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'Valloric/YouCompleteMe'
-Plug 'scrooloose/syntastic'
 Plug 'jnurmine/Zenburn'
 
 call plug#end()
@@ -19,9 +17,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" YCM
-let g:ycm_global_ycm_extra_conf = '~/.vim/configs/.ycm_extra_conf.py'
 
 " Encoding
 set encoding=utf-8
@@ -41,3 +36,12 @@ syntax on
 
 " Backspace 'bug'
 set backspace=2
+
+" Swap files
+set directory=~/.vim/swapfiles
+
+" Highlight search
+set hls
+
+" Draw column as 80 chars
+set colorcolumn=80
