@@ -9,3 +9,5 @@ email = piotrbielak2@gmail.com
 	ca = commit --amend
 	can = commit --amend --no-edit
 	ch = checkout
+[core]
+  editor = 'vim'
