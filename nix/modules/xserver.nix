@@ -2,10 +2,6 @@
 { config, pkgs, ... }:
 
 {
-  # Enable the X11 windowing system.
-  # services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
-
   environment.pathsToLink = [ "/libexec" ];
 
   services.xserver = {
@@ -21,11 +17,13 @@
 
     exportConfiguration = true;
 
-    # Enable touchpad support.
     libinput = {
       enable = true;
       naturalScrolling = true;
     };
+
+    xkbOptions = "ctrl:nocaps";
+    layout = "pl";
 
     windowManager.i3 = {
       enable = true;
