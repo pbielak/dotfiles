@@ -41,6 +41,8 @@
     xflux-gui
     pciutils
     networkmanager
+    awscli
+    unzip
 
     # Window manager
     i3
