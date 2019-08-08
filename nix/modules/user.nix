@@ -7,6 +7,12 @@
     isNormalUser = true;
     home = "/home/peter";
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" "docker" "audio" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+      "docker"
+      "audio"
+      "video"
+    ];
   };
 }
