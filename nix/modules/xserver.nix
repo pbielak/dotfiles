@@ -23,7 +23,10 @@
     exportConfiguration = true;
 
     # Enable touchpad support.
-    libinput.enable = true;
+    libinput = {
+      enable = true;
+      naturalScrolling = true;
+    };
 
     resolutions = [
       { x = 1440; y = 900; }
