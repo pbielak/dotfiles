@@ -119,6 +119,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -5
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioMicMute exec amixer set Capture toggle
 
 # Lock screen
 bindsym $mod+Shift+l exec $HOME/.config/i3/lock.sh
