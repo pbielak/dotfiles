@@ -45,6 +45,9 @@
     # Window manager
     i3
     xorg.xinit
+    xorg.xev
+    xorg.setxkbmap
+    acpilight
     feh
   ];
 

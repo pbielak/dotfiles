@@ -19,4 +19,7 @@
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
+
+  # Backlight
+  hardware.brightnessctl.enable = true;
 }
