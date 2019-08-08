@@ -8,6 +8,9 @@
   #   consoleKeyMap = "us";
   #   defaultLocale = "en_US.UTF-8";
   # };
+  i18n = {
+    consoleUseXkbConfig = true;
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Warsaw";
