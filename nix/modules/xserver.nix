@@ -35,6 +35,8 @@
         i3lock
         i3blocks
         rofi
+        scrot
+        imagemagick
       ];
     };
   };
