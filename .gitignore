@@ -2,3 +2,4 @@
 nix/hardware-configuration.nix
 .vim/autoload
 .vim/plugged
+.vim/swapfiles/*.swp
