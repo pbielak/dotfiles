@@ -33,6 +33,9 @@ rm -rf /tmp/rofi-themes
 # Link dunstrc
 ln -srf ./dunst $HOME/.config/dunst
 
+# Link i3status
+ln -srf ./i3status $HOME/.config/i3status
+
 # Link .xinitrc (for startx)
 ln -srf ./.xinitrc $HOME/.xinitrc
 
