@@ -30,6 +30,9 @@ git clone https://github.com/SpotlightKid/rofi-themes.git /tmp/rofi-themes
 )
 rm -rf /tmp/rofi-themes
 
+# Link dunstrc
+ln -srf ./dunst $HOME/.config/dunst
+
 # Link .xinitrc (for startx)
 ln -srf ./.xinitrc $HOME/.xinitrc
 

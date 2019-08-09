@@ -51,7 +51,7 @@
     xorg.setxkbmap
     acpilight
     feh
-    notify-osd
+    dunst
     libnotify
   ];
 
