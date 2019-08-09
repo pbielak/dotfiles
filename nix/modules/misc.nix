@@ -25,4 +25,10 @@
 
   # Backlight
   hardware.brightnessctl.enable = true;
+
+  # Fonts
+  fonts.fonts = with pkgs; [
+    noto-fonts
+    font-awesome_5
+  ];
 }
