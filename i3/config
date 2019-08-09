@@ -132,6 +132,7 @@ bar {
 
 exec --no-startup-id "feh --bg-fill $HOME/wallpapers/gastly.jpg"
 exec --no-startup-id "xflux -l 51.1078852 -g 17.0385376"
+#exec --no-startup-id "dunst"
 
 exec --no-startup-id "Discord"
 for_window [class="discord"] move to workspace $ws7
@@ -141,3 +142,7 @@ for_window [class="Slack"] move to workspace $ws8
 
 exec --no-startup-id "spotify"
 for_window [class="Spotify"] move to workspace $ws9
+
+exec --no-startup-id "thunderbird"
+for_window [title="Inbox.*"] move to workspace $ws10
+

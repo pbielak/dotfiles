@@ -51,6 +51,8 @@
     xorg.setxkbmap
     acpilight
     feh
+    notify-osd
+    libnotify
   ];
 
   virtualisation.docker.enable = true;
