@@ -116,10 +116,10 @@ bindsym $mod+r mode "resize"
 bindsym XF86MonBrightnessUp exec xbacklight +5
 bindsym XF86MonBrightnessDown exec xbacklight -5
 
-bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
-bindsym XF86AudioMute exec amixer set Master toggle
-bindsym XF86AudioMicMute exec amixer set Capture toggle
+bindsym XF86AudioRaiseVolume exec $HOME/.config/i3/volume.sh "CHANGE" '5%+'
+bindsym XF86AudioLowerVolume exec $HOME/.config/i3/volume.sh "CHANGE" '5%-'
+bindsym XF86AudioMute exec $HOME/.config/i3/volume.sh "MUTE"
+bindsym XF86AudioMicMute exec $HOME/.config/i3/volume.sh "MICMUTE"
 
 # Lock screen
 bindsym $mod+Shift+l exec $HOME/.config/i3/lock.sh
@@ -132,7 +132,7 @@ bar {
 
 exec --no-startup-id "feh --bg-fill $HOME/wallpapers/gastly.jpg"
 exec --no-startup-id "xflux -l 51.1078852 -g 17.0385376"
-#exec --no-startup-id "dunst"
+exec --no-startup-id "dunst"
 
 exec --no-startup-id "Discord"
 for_window [class="discord"] move to workspace $ws7

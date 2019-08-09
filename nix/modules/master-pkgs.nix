@@ -13,6 +13,7 @@ in
 {
   nixpkgs.config = baseConfig // {
     packageOverrides = pkgs: {
+      dunst = pkgsMaster.dunst;
       vivaldi = pkgsMaster.vivaldi;
     };
   };
