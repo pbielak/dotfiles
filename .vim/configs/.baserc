@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'jnurmine/Zenburn'
+Plug 'LnL7/vim-nix'
 
 call plug#end()
 filetype plugin indent on    " required
