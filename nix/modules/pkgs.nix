@@ -42,6 +42,7 @@
     pciutils
     networkmanager
     awscli
+    zip
     unzip
 
     # Window manager
