@@ -116,11 +116,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Media keys
-bindsym XF86MonBrightnessUp exec xbacklight +5
-bindsym XF86MonBrightnessDown exec xbacklight -5
+bindsym XF86MonBrightnessUp exec $HOME/.config/i3/brightness.sh "+5"
+bindsym XF86MonBrightnessDown exec $HOME/.config/i3/brightness.sh "-5"
 
-bindsym XF86AudioRaiseVolume exec $HOME/.config/i3/volume.sh "CHANGE" '5%+'
-bindsym XF86AudioLowerVolume exec $HOME/.config/i3/volume.sh "CHANGE" '5%-'
+bindsym XF86AudioRaiseVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%+"
+bindsym XF86AudioLowerVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%-"
 bindsym XF86AudioMute exec $HOME/.config/i3/volume.sh "MUTE"
 bindsym XF86AudioMicMute exec $HOME/.config/i3/volume.sh "MICMUTE"
 
