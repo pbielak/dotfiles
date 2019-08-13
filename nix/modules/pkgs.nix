@@ -44,6 +44,7 @@
     awscli
     zip
     unzip
+    lm_sensors
 
     # Window manager
     i3
