@@ -20,7 +20,11 @@
     spotify
 
     # Web
-    vivaldi
+    (vivaldi.override {
+      proprietaryCodecs = true;
+      vivaldi-ffmpeg-codecs = vivaldi-ffmpeg-codecs;
+    })
+    vivaldi-ffmpeg-codecs
     thunderbird
 
     # Terminal

@@ -15,6 +15,7 @@ in
     packageOverrides = pkgs: {
       dunst = pkgsMaster.dunst;
       vivaldi = pkgsMaster.vivaldi;
+      vivaldi-ffmpeg-codecs = pkgsMaster.vivaldi-ffmpeg-codecs;
     };
   };
 }
