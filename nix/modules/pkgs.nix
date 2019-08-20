@@ -61,5 +61,8 @@
     libnotify
   ];
 
-  virtualisation.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    extraOptions = "--experimental";
+  };
 }
