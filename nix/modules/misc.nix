@@ -21,7 +21,14 @@
   # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
 
   # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    drivers = [
+      pkgs.gutenprint
+      #pkgs.hplip
+      pkgs.hplipWithPlugin
+    ];
+  };
 
   # Backlight
   hardware.brightnessctl.enable = true;
