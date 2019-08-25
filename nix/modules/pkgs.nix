@@ -63,6 +63,6 @@
 
   virtualisation.docker = {
     enable = true;
-    extraOptions = "--experimental";
+    extraOptions = "--experimental -s overlay";
   };
 }
