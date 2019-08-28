@@ -34,6 +34,7 @@
     wget
     vim
     tmux
+    ncdu
 
     # ZSH
     zsh
