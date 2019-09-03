@@ -162,3 +162,5 @@ for_window [class="Spotify"] move to workspace $ws9
 exec --no-startup-id "thunderbird"
 for_window [title=".*Thunderbird.*"] move to workspace $ws10
 
+exec --no-startup-id "blueman-applet"
+

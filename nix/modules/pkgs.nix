@@ -60,6 +60,7 @@
     feh
     dunst
     libnotify
+    blueman  # Bluetooth
   ];
 
   virtualisation.docker = {
