@@ -67,4 +67,8 @@
     enable = true;
     extraOptions = "--experimental -s overlay";
   };
+
+  virtualisation.virtualbox = {
+    host.enable = true;
+  };
 }

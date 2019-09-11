@@ -15,4 +15,8 @@
       "video"
     ];
   };
+
+  users.extraGroups.vboxusers.members = [
+    "peter"
+  ];
 }
