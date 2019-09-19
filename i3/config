@@ -1,5 +1,9 @@
 set $mod Mod1
 
+set $intmonitor eDP-1
+set $extmonitor HDMI-2
+##set $extmonitor DP-2-2
+
 font pango: Noto Sans 10
 
 # Do not foucus on mouse hover
@@ -63,6 +67,18 @@ set $ws8 "8 IM"
 set $ws9 "9 Spotify"
 set $ws10 "10 Mail"
 
+# Assign workspaces to monitors
+workspace $ws1 output $extmonitor
+workspace $ws2 output $extmonitor
+workspace $ws3 output $extmonitor
+workspace $ws4 output $extmonitor
+workspace $ws5 output $extmonitor
+workspace $ws6 output $extmonitor
+workspace $ws7 output $extmonitor
+workspace $ws8 output $intmonitor
+workspace $ws9 output $intmonitor
+workspace $ws10 output $intmonitor
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -74,6 +90,10 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+
+# move workspace to output
+bindsym Mod4+Shift+Right move workspace to output $intmonitor
+bindsym Mod4+Shift+Left move workspace to output $extmonitor
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -123,6 +143,8 @@ bindsym XF86AudioRaiseVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%+"
 bindsym XF86AudioLowerVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%-"
 bindsym XF86AudioMute exec $HOME/.config/i3/volume.sh "MUTE"
 bindsym XF86AudioMicMute exec $HOME/.config/i3/volume.sh "MICMUTE"
+
+bindsym XF86Display exec $HOME/.config/i3/display.sh "eDP-1" "HDMI-2"
 
 # Lock screen
 bindsym $mod+Shift+l exec $HOME/.config/i3/lock.sh
