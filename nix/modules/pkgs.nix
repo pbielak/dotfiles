@@ -50,6 +50,7 @@
     zip
     unzip
     lm_sensors
+    s-tui
 
     # Window manager
     i3
