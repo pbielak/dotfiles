@@ -1,8 +1,7 @@
 set $mod Mod1
 
 set $intmonitor eDP-1
-set $extmonitor HDMI-2
-##set $extmonitor DP-2-2
+set $extmonitor DP-2-2
 
 font pango: Noto Sans 10
 
@@ -19,7 +18,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+d exec "rofi -show drun -theme oxide"
+bindsym $mod+d exec "rofi -show drun -theme oxide -show-icons"
 bindsym $mod+Tab exec "rofi -show window -theme oxide"
 
 # change focus
@@ -144,7 +143,7 @@ bindsym XF86AudioLowerVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%-"
 bindsym XF86AudioMute exec $HOME/.config/i3/volume.sh "MUTE"
 bindsym XF86AudioMicMute exec $HOME/.config/i3/volume.sh "MICMUTE"
 
-bindsym XF86Display exec $HOME/.config/i3/display.sh "eDP-1" "HDMI-2"
+bindsym XF86Display exec $HOME/.config/i3/display.sh "eDP-1" "DP-2-2"
 
 # Lock screen
 bindsym $mod+Shift+l exec $HOME/.config/i3/lock.sh

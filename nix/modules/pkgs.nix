@@ -23,6 +23,8 @@
     (vivaldi.override {
       proprietaryCodecs = true;
       vivaldi-ffmpeg-codecs = vivaldi-ffmpeg-codecs;
+      enableWidevine = true;
+      vivaldi-widevine = vivaldi-widevine;
     })
     vivaldi-ffmpeg-codecs
     thunderbird
@@ -45,12 +47,19 @@
     xflux
     xflux-gui
     pciutils
-    networkmanager
     awscli
     zip
     unzip
     lm_sensors
     s-tui
+    pavucontrol
+    bat  # cat (1) replacement
+    binutils-unwrapped # Tools like "ar"
+
+    # Network
+    networkmanager
+    networkmanagerapplet
+    networkmanager-openvpn
 
     # Window manager
     i3
