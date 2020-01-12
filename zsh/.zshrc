@@ -21,3 +21,8 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 if [[ -n "${NIX_SHELL_NAME}" ]]; then
   export PS1="(${NIX_SHELL_NAME}) $PS1"
 fi
+
+RUST_BINARIES="${HOME}/.cargo/bin/"
+
+export PATH="${RUST_BINARIES}:${PATH}"
+
