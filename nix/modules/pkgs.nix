@@ -54,6 +54,7 @@
     s-tui
     pavucontrol
     bat  # cat (1) replacement
+    exa  # ls replacement
     binutils-unwrapped # Tools like "ar"
 
     # Network
