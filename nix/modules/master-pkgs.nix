@@ -12,6 +12,12 @@ let
       sha256 = "0cl440vh45qfg01rz5x1d79pd5anwbczd39pn4034s66q3dbmvr3";
     }
   ) { config = baseConfig; };
+
+  pkgsMasterTop = import (
+    fetchTarball {
+      url = https://github.com/NixOS/nixpkgs/archive/master.tar.gz; # Always top of master branch
+    }
+  ) { config = baseConfig; };
 in
 {
   nixpkgs.config = baseConfig // {
@@ -28,6 +34,7 @@ in
       networkmanagerapplet = pkgsMaster.networkmanagerapplet;
       networkmanager-openvpn = pkgsMaster.networkmanager-openvpn;
       slack = pkgsMaster.slack;
+      discord = pkgsMasterTop.discord;
     };
   };
 }
