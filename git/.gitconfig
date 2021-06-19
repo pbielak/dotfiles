@@ -4,12 +4,14 @@
 name = Piotr Bielak
 email = piotrbielak2@gmail.com 
 [alias]
-	s = status
+	s = status --short
+        sf = status
 	c = commit
 	ca = commit --amend
 	can = commit --amend --no-edit
 	ch = checkout
 	d = diff
 	ds = diff --staged
+        fpa = fetch -p --all
 [core]
   editor = 'vim'

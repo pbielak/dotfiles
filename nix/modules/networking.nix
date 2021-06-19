@@ -16,4 +16,9 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+
+
+  # Wireguard
+  boot.extraModulePackages = [ config.boot.kernelPackages.wireguard ];
+  environment.systemPackages = [ pkgs.wireguard pkgs.wireguard-tools ];
 }

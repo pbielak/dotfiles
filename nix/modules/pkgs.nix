@@ -15,6 +15,7 @@
     discord
     tdesktop
     slack
+    zoom-us
     
     # Music
     spotify
@@ -72,6 +73,17 @@
     dunst
     libnotify
     blueman  # Bluetooth
+
+    bitwarden
+
+    # Steam
+    steam
+
+    # GCloud
+    google-cloud-sdk
+
+    # Teams
+    # teams
   ];
 
   virtualisation.docker = {
