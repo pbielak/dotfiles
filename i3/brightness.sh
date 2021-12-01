@@ -9,10 +9,10 @@ function push_notification {
 
 function change_brightness {
   value="${1}"
-  xbacklight "${value}"
+  brightnessctl set "${value}"
 
-  current_brightness="$(xbacklight -get intel_backlight)"
-  push_notification "Current: ${current_brightness}%"
+  current_brightness="$(brightnessctl -m -d intel_backlight | cut -d, -f4)"
+  push_notification "Current: ${current_brightness}"
 }
 
 BRIGHTNESS_DELTA="${1}"

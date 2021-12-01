@@ -4,7 +4,7 @@ set $intmonitor eDP-1
 # set $extmonitor DP-2-2
 set $extmonitor HDMI-2
 
-font pango: Noto Sans 10
+font pango:Noto Sans 10
 
 # Do not foucus on mouse hover
 focus_follows_mouse no
@@ -136,8 +136,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Media keys
-bindsym XF86MonBrightnessUp exec $HOME/.config/i3/brightness.sh "+5"
-bindsym XF86MonBrightnessDown exec $HOME/.config/i3/brightness.sh "-5"
+bindsym XF86MonBrightnessUp exec $HOME/.config/i3/brightness.sh "5%+"
+bindsym XF86MonBrightnessDown exec $HOME/.config/i3/brightness.sh "5%-"
 
 bindsym XF86AudioRaiseVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%+"
 bindsym XF86AudioLowerVolume exec $HOME/.config/i3/volume.sh "CHANGE" "5%-"

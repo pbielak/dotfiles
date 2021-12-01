@@ -32,24 +32,19 @@ in
       hplip = (pkgsMaster.hplip.override {
         withPlugin = true;
       });
-      vivaldi = pkgsMaster.vivaldi;
-      vivaldi-ffmpeg-codecs = pkgsMaster.vivaldi-ffmpeg-codecs;
-      vivaldi-widevine = pkgsMaster.vivaldi-widevine;
-      # freeoffice = pkgsMaster.freeoffice;
       networkmanager = pkgsMaster.networkmanager;
       networkmanagerapplet = pkgsMaster.networkmanagerapplet;
       networkmanager-openvpn = pkgsMaster.networkmanager-openvpn;
-      slack = pkgsMaster.slack;
-      # steam = pkgsMaster2.steam;
-      steam = (pkgsMaster2.steam.override { 
-        extraLibraries = pkgs: [ pkgsMaster2.pipewire ]; 
-      });
+      slack = pkgsMasterTop.slack;
+      steam = pkgsMasterTop.steam;
+      # steam = (pkgsMaster2.steam.override { 
+      #   extraLibraries = pkgs: [ pkgsMaster2.pipewire ]; 
+      # });
       bitwarden = pkgsMaster2.bitwarden;
 
       discord = pkgsMasterTop.discord;
       google-cloud-sdk = pkgsMasterTop.google-cloud-sdk;
       zoom-us = pkgsMasterTop.zoom-us;
-      # teams = pkgsMasterTop.teams;
     };
   };
 }

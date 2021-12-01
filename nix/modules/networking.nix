@@ -7,6 +7,7 @@
 
   # Wireless
   networking.wireless.enable = true;
+  networking.wireless.interfaces = ["wlp3s0"];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -19,6 +20,5 @@
 
 
   # Wireguard
-  boot.extraModulePackages = [ config.boot.kernelPackages.wireguard ];
   environment.systemPackages = [ pkgs.wireguard pkgs.wireguard-tools ];
 }

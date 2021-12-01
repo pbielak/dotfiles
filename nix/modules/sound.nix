@@ -17,9 +17,10 @@
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = false;
-    extraConfig = ''
-      [General]
-      ControllerMode = bredr
-    '';
+    settings = {
+      General = {
+        ControllerMode = "bredr";
+      };
+    };
   };
 }

@@ -9,17 +9,19 @@
     autorun = false;
 
     desktopManager = {
-      default = "none";
       xterm.enable = false;
     };
 
+    displayManager.defaultSession = "none+i3";
     displayManager.startx.enable = true;
 
     exportConfiguration = true;
 
     libinput = {
       enable = true;
-      naturalScrolling = true;
+      touchpad = {
+        naturalScrolling = true;
+      };
     };
 
     xkbOptions = "ctrl:nocaps";

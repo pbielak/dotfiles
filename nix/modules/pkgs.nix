@@ -13,7 +13,6 @@
 
     # IM
     discord
-    tdesktop
     slack
     zoom-us
     
@@ -46,7 +45,6 @@
     # Other
     docker
     xflux
-    xflux-gui
     pciutils
     awscli
     zip
@@ -72,7 +70,7 @@
     feh
     dunst
     libnotify
-    blueman  # Bluetooth
+    #blueman  # Bluetooth
 
     bitwarden
 
@@ -82,8 +80,8 @@
     # GCloud
     google-cloud-sdk
 
-    # Teams
-    # teams
+    # Brightness adjustment
+    brightnessctl
   ];
 
   virtualisation.docker = {
@@ -91,7 +89,7 @@
     extraOptions = "--experimental -s overlay";
   };
 
-  virtualisation.virtualbox = {
-    host.enable = true;
-  };
+  # virtualisation.virtualbox = {
+  #   host.enable = true;
+  # };
 }
