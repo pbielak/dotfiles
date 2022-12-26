@@ -41,6 +41,7 @@ in
       #   extraLibraries = pkgs: [ pkgsMaster2.pipewire ]; 
       # });
       bitwarden = pkgsMaster2.bitwarden;
+      # pycharm-professional = pkgsMasterTop.jetbrains.pycharm-professional;
 
       discord = pkgsMasterTop.discord;
       google-cloud-sdk = pkgsMasterTop.google-cloud-sdk;
