@@ -20,5 +20,16 @@
 
 
   # Wireguard
-  environment.systemPackages = [ pkgs.wireguard pkgs.wireguard-tools ];
+  environment.systemPackages = [ pkgs.wireguard-tools ];
+
+  # Fix for wpa_supplicant
+  nixpkgs.overlays = [
+    (self: super: {
+      wpa_supplicant = super.wpa_supplicant.overrideAttrs (oldAttrs: rec {
+        extraConfig = oldAttrs.extraConfig + ''
+          CONFIG_WEP=y
+        '';
+      });
+    })
+  ];
 }

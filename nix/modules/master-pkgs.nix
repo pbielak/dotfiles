@@ -13,12 +13,6 @@ let
     }
   ) { config = baseConfig; };
 
-  pkgsMaster2 = import (
-    fetchTarball {
-      url = https://github.com/NixOS/nixpkgs/archive/04f9cd0b0c118367a0c0ac54301402c7b9985732.tar.gz; # Pinned 2
-    }
-  ) { config = baseConfig; };
-
   pkgsMasterTop = import (
     fetchTarball {
       url = https://github.com/NixOS/nixpkgs/archive/master.tar.gz; # Always top of master branch
@@ -28,7 +22,6 @@ in
 {
   nixpkgs.config = baseConfig // {
     packageOverrides = pkgs: {
-      dunst = pkgsMaster.dunst;
       hplip = (pkgsMaster.hplip.override {
         withPlugin = true;
       });
@@ -37,12 +30,7 @@ in
       networkmanager-openvpn = pkgsMaster.networkmanager-openvpn;
       slack = pkgsMasterTop.slack;
       steam = pkgsMasterTop.steam;
-      # steam = (pkgsMaster2.steam.override { 
-      #   extraLibraries = pkgs: [ pkgsMaster2.pipewire ]; 
-      # });
-      bitwarden = pkgsMaster2.bitwarden;
       # pycharm-professional = pkgsMasterTop.jetbrains.pycharm-professional;
-
       discord = pkgsMasterTop.discord;
       google-cloud-sdk = pkgsMasterTop.google-cloud-sdk;
       zoom-us = pkgsMasterTop.zoom-us;

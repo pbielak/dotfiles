@@ -7,6 +7,8 @@
   environment.systemPackages = with pkgs; [
     # Dev
     python37Full
+    python38Full
+    python310
     rustup
     gcc
     jetbrains.pycharm-professional
@@ -70,7 +72,7 @@
     feh
     dunst
     libnotify
-    #blueman  # Bluetooth
+    # blueman  # Bluetooth
 
     bitwarden
 
