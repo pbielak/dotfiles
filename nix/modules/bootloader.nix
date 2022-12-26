@@ -9,4 +9,5 @@
   boot.loader.grub.device = "nodev";
   boot.loader.grub.enableCryptodisk = true;
   #boot.loader.grub.efiInstallAsRemovable = false;
+  boot.supportedFilesystems = [ "ntfs" ];
 }
