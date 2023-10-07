@@ -1,7 +1,7 @@
 [global]
+width = (300, 512)
 monitor = 0
 follow = mouse
-geometry = "300x60-20+48"
 indicate_hidden = yes
 shrink = no
 separator_height = 0
@@ -21,14 +21,13 @@ ignore_newline = no
 stack_duplicates = yes
 hide_duplicate_count = yes
 show_indicators = no
-icon_position = off
+icon_position = left
+max_icon_size = 128
 sticky_history = yes
 history_length = 20
 always_run_script = true
 title = Dunst
 class = Dunst
-
-[shortcuts]
 close = ctrl+space
 close_all = ctrl+shift+space
 
