@@ -14,7 +14,7 @@
       ./modules/xserver.nix
       ./modules/zsh.nix
 
-      ./modules/master-pkgs.nix
+#      ./modules/master-pkgs.nix
     ];
 
   system.stateVersion = "19.03";

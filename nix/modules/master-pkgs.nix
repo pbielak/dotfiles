@@ -12,12 +12,6 @@ let
       sha256 = "0cl440vh45qfg01rz5x1d79pd5anwbczd39pn4034s66q3dbmvr3";
     }
   ) { config = baseConfig; };
-
-  pkgsMasterTop = import (
-    fetchTarball {
-      url = https://github.com/NixOS/nixpkgs/archive/master.tar.gz; # Always top of master branch
-    }
-  ) { config = baseConfig; };
 in
 {
   nixpkgs.config = baseConfig // {
@@ -25,15 +19,6 @@ in
       hplip = (pkgsMaster.hplip.override {
         withPlugin = true;
       });
-      networkmanager = pkgsMaster.networkmanager;
-      networkmanagerapplet = pkgsMaster.networkmanagerapplet;
-      networkmanager-openvpn = pkgsMaster.networkmanager-openvpn;
-      slack = pkgsMasterTop.slack;
-      steam = pkgsMasterTop.steam;
-      # pycharm-professional = pkgsMasterTop.jetbrains.pycharm-professional;
-      discord = pkgsMasterTop.discord;
-      google-cloud-sdk = pkgsMasterTop.google-cloud-sdk;
-      zoom-us = pkgsMasterTop.zoom-us;
     };
   };
 }

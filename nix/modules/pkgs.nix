@@ -6,8 +6,6 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Dev
-    python37Full
-    python38Full
     python310
     rustup
     gcc
@@ -26,7 +24,6 @@
       proprietaryCodecs = true;
       vivaldi-ffmpeg-codecs = vivaldi-ffmpeg-codecs;
       enableWidevine = true;
-      vivaldi-widevine = vivaldi-widevine;
     })
     vivaldi-ffmpeg-codecs
     thunderbird
